@@ -25,4 +25,11 @@ Fixed Point Iteration Method
 Aitkens Acceleration for the Fixed Point Iteration
 Ridders Method
 
-It is a simple implementation and does not take guard for overflows. Run the make file and then try out the testall file. Go through the header file for usage.
+It is a simple implementation and does not take guard for overflows. Go through the header file for usage. This accepts the following function definition:
+
+double function(void *user,double x)
+where
+*user can be any type and has to be type cast inside the function and contains the parameters for the function,
+x is the variable over which we search for the root.
+
+Run the make utility to compile all the files and then try out the testall file. 
